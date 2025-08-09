@@ -1,0 +1,94 @@
+.footer {
+  background-color: black;
+  color: white;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.progress-container {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  max-width: 500px;
+  justify-content: space-between;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.progress-bar {
+  width: 335px;
+  height: 5px;
+  background: #ccc;
+  outline: none;
+  appearance: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.1s;
+}
+
+.progress-bar::-webkit-slider-runnable-track {
+  height: 5px;
+  border-radius: 5px;
+  background: transparent;
+}
+
+.progress-bar::-webkit-slider-thumb {
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  background:  white;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -3px;
+}
+
+.progress-bar::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  background:  #11dc58;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.time {
+  font-size: 12px;
+  color: white;
+}
+
+.play_button {
+  background-color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  border: none;
+  font-size: 22px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.play_button:hover {
+  transform: scale(1.1);
+}
+
+.skip {
+  font-size: 28px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.skip:hover {
+  color: white;
+  transform: scale(1.1);
+}
+
+.footer div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
